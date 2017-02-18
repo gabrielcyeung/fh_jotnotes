@@ -21,9 +21,9 @@ public class Note {
     {
         return note;
     }
-    public Date getDate()
+    public String getDate()
     {
-        return date;
+        return date.toString();
     }
     public String getTags()
     {

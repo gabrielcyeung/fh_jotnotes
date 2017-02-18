@@ -40,7 +40,8 @@ public class newnote extends AppCompatActivity {
                 notes.add(newnote);
                 startActivity(new Intent(newnote.this, MainActivity.class));
                 Intent intent=new Intent(newnote.this,notelist.class);
-                intent.putExtra("notes",notes);
+                String x=newnote.getDate()+" "+newnote.getNote()+" "+newnote.getTags();
+                intent.putExtra("note",x);
             }
         });
 

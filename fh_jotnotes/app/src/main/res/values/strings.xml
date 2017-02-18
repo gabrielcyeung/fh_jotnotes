@@ -101,6 +101,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_tags">tags</string>
+    <string name="title_activity_newtags">newtags</string>
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->

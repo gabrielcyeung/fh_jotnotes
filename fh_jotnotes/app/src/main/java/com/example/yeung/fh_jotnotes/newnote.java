@@ -16,8 +16,6 @@ public class newnote extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       
-
     }
 
 }

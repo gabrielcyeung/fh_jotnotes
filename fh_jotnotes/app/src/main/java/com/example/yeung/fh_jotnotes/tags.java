@@ -21,10 +21,10 @@ public class tags extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(tags.this, newtag.class));
+                startActivity(new Intent(tags.this, newtags.class));
 
-                // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //    .setAction("Action", null).show();
+                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                  // .setAction("Action", null).show();
             }
         });
     }

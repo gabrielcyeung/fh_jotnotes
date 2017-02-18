@@ -14,16 +14,6 @@
     tools:showIn="@layout/app_bar_main">
 
 
-    <TextView
-        android:text="WELCOME"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:layout_below="@+id/textClock2"
-        android:layout_centerHorizontal="true" />
-
-
-
     <TextClock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,5 +22,24 @@
         android:textSize="50sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/usernamedisplay"
+        android:text="@string/pref_default_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textClock2"
+        android:layout_alignEnd="@+id/textClock2"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:text="Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBaseline="@+id/usernamedisplay"
+        android:layout_alignBottom="@+id/usernamedisplay"
+        android:layout_toStartOf="@+id/usernamedisplay" />
 
 </RelativeLayout>

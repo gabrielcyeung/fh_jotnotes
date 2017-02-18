@@ -34,6 +34,10 @@
             android:label="@string/title_activity_tags"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".newtags"
+            android:label="@string/title_activity_newtags"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".settings"
             android:label="@string/title_activity_settings"></activity>
     </application>

@@ -107,10 +107,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         ArrayList<String> tags=new ArrayList<String>();
         if (id == R.id.nav_notes) {
-            startActivity(new Intent(MainActivity.this, newnote.class));
+            startActivity(new Intent(MainActivity.this, notelist.class));
         } else if (id == R.id.nav_tags) {
             startActivity(new Intent(MainActivity.this, tags.class));//replace tags with whatever the class will be called
-            tags.add();//add something from the input box
+           // tags.add();//add something from the input box
         } else if (id == R.id.nav_archive) {
             startActivity(new Intent(MainActivity.this, archive.class));//replace archive with whatever the class will be called
         } else if (id == R.id.nav_settings) {

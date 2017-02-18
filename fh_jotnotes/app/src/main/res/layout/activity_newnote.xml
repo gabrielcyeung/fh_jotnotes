@@ -6,23 +6,48 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <EditText android:id="@+id/edit_message"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="219dp"
-        android:hint="@string/edit_message" />
+        android:layout_height="match_parent">
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:dividerHeight="1dp"
-        android:divider="@android:color/holo_red_dark"
-        android:entries="@string/title_activity_tags" />
+        <EditText android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/edit_message"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3" />
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:id="@+id/button3"
+            android:elevation="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:id="@+id/button2"
+            android:elevation="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:divider="@android:color/holo_red_dark"
+            android:entries="@array/pref_example_list_titles"
+            android:layout_weight="0.99"
+            android:paddingBottom="45dp"
+            android:layout_below="@+id/edit_message" />
+
+    </RelativeLayout>
 
 
 </LinearLayout>

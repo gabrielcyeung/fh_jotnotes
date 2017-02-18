@@ -18,6 +18,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -103,11 +105,12 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        ArrayList<String> tags=new ArrayList<String>();
         if (id == R.id.nav_notes) {
             startActivity(new Intent(MainActivity.this, newnote.class));
         } else if (id == R.id.nav_tags) {
             startActivity(new Intent(MainActivity.this, tags.class));//replace tags with whatever the class will be called
+            tags.add();//add something from the input box
         } else if (id == R.id.nav_archive) {
             startActivity(new Intent(MainActivity.this, archive.class));//replace archive with whatever the class will be called
         } else if (id == R.id.nav_settings) {

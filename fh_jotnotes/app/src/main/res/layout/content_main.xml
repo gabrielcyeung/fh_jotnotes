@@ -13,8 +13,24 @@
     tools:context="com.example.yeung.fh_jotnotes.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+
     <TextView
+        android:text="WELCOME"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This will be where you can jot down notes!" />
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textClock2"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock2"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

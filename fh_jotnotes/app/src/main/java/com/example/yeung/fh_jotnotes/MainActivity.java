@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -27,8 +29,10 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this, newnote.class));
+
+               // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    //    .setAction("Action", null).show();
             }
         });
 
@@ -74,20 +78,22 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.nav_notes) {
+            startActivity(new Intent(MainActivity.this, newnote.class));
+        } else if (id == R.id.nav_tags) {
+            startActivity(new Intent(MainActivity.this, tags.class));//replace tags with whatever the class will be called
+        } else if (id == R.id.nav_archive) {
+            startActivity(new Intent(MainActivity.this, archive.class));//replace archive with whatever the class will be called
+        } else if (id == R.id.nav_settings) {
+            startActivity(new Intent(MainActivity.this, settings.class));//replace settings with whatever the class will be called
         }
 
         /**else if (id == R.id.nav_share) {

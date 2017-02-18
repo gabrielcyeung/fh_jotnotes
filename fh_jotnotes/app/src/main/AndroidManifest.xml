@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yeung.fh_jotnotes">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".newnote"
+            android:label="@string/title_activity_newnote"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".archive"
+            android:label="@string/title_activity_archive"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tags"
+            android:label="@string/title_activity_tags"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".settings"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>

@@ -19,22 +19,23 @@ public class notelist extends AppCompatActivity {
         setContentView(R.layout.activity_notelist);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        ListView lv=(ListView)findViewById(R.id.notelist1);//something here doesn't work
-        ArrayList<String> notes=new ArrayList<String>();
-        Bundle extras=getIntent().getExtras();
-        String x="";
-        if(extras!=null)
-        {
-            x=extras.getString("note");
+    }/*
+    public static void update() {
+        ListView lv = (ListView) findViewById(R.id.notelist1);//something here doesn't work
+        ArrayList<String> notes = new ArrayList<String>();
+        Bundle extras = getIntent().getExtras();
+        String x = "";
+        if (extras != null) {
+            x = extras.getString("note");
         }
-        if(x!="") {
+        if (x != "") {
             notes.add(x);
         }
-        lv=(ListView)findViewById(R.id.notelist1);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,notes );
+        lv = (ListView) findViewById(R.id.notelist1);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, notes);
         lv.setAdapter(arrayAdapter);
 
     }
+*/
 
 }
